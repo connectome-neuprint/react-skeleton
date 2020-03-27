@@ -1,6 +1,6 @@
 {
   "name": "@neuprint/react-skeleton",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React component to render 3D neuron skeleton",
   "main": "lib/index.js",
   "scripts": {
