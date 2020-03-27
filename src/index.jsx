@@ -40,7 +40,7 @@ class Skeleton extends React.Component {
     }
     return (
       <div
-        style={{ width: "100%", height: "100%" }}
+        style={{ width: "100%", height: "100%", outline: "none" }}
         ref={this.skelRef}
         id="skeletonviewer"
       />
