@@ -12,10 +12,7 @@
   "author": "Jody Clements",
   "license": "MIT",
   "dependencies": {
-    "@janelia/sharkviewer": "^1.4.1",
-    "three": "^0.87.1",
-    "three-obj-loader": "^1.1.3",
-    "three-orbit-controls": "^82.1.0"
+    "@janelia/sharkviewer": "^1.4.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
