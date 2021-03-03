@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 class Skeleton extends React.Component {
   constructor(props) {
@@ -27,7 +28,7 @@ class Skeleton extends React.Component {
   render() {
     // take swc data from props and render it into the 3D canvas
     const { sharkViewer } = this.state;
-    const { swc } = this.props;
+    const { swc, height, width } = this.props;
     const moveCamera = true;
     if (swc && sharkViewer) {
       sharkViewer.unloadNeuron("test");
@@ -40,7 +41,7 @@ class Skeleton extends React.Component {
     }
     return (
       <div
-        style={{ width: "100%", height: "100%", outline: "none" }}
+        style={{ width, height, outline: "none" }}
         ref={this.skelRef}
         id="skeletonviewer"
       />
@@ -48,4 +49,16 @@ class Skeleton extends React.Component {
   }
 }
 
+Skeleton.propTypes = {
+  swc: PropTypes.string.isRequired,
+  height: PropTypes.string,
+  width: PropTypes.string
+};
+
+Skeleton.defaultProps = {
+  width: "100%",
+  height: "100%"
+};
+
 export default Skeleton;
+

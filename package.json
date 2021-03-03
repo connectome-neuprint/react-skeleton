@@ -7,19 +7,24 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src -d lib",
     "dev": "babel src -d lib --watch  --source-maps inline",
+		"styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "prepublishOnly": "npm run build"
   },
   "author": "Jody Clements",
   "license": "MIT",
   "dependencies": {
-    "@janelia/sharkviewer": "^1.4.2"
+    "@janelia/sharkviewer": "^1.4.2",
+    "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.9.0",
+    "@babel/core": "^7.13.8",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
-    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-env": "^7.13.9",
     "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.2.2",
+    "core-js": "^2.6.12",
     "eslint": "^6.8.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.7.0",
@@ -29,6 +34,9 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^2.3.0",
-    "prettier": "^1.19.1"
+    "prettier": "^1.19.1",
+    "react-styleguidist": "^11.1.5",
+    "webpack": "^5.24.2",
+    "webpack-cli": "^4.5.0"
   }
 }

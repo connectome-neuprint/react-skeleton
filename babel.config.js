@@ -10,6 +10,7 @@ module.exports = function(api) {
           chrome: "67",
           safari: "11.1"
         },
+				corejs: 3,
         forceAllTransforms: true
       }
     ],
